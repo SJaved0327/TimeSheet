@@ -1,4 +1,8 @@
+<<<<<<< HEAD
  var config = {
+=======
+var config = {
+>>>>>>> cfb60e0d2ab57257851e8f3ff67a7ed4f49ce6f3
     apiKey: "AIzaSyA1rLAiVhAnj8DnNQg9G9nAYd_umt3Ns6A",
     authDomain: "bobby-test-22440.firebaseapp.com",
     databaseURL: "https://bobby-test-22440.firebaseio.com",
@@ -31,5 +35,41 @@ $("#sumbitbutton").on("click", function(event){
       start: start
     });
 
+<<<<<<< HEAD
 
 });
+=======
+});
+
+database.ref().on("child_added", function(snapshot) {
+
+      // Log everything that's coming out of snapshot
+
+      console.log(snapshot.val());
+
+      console.log(snapshot.val().name);
+
+      console.log(snapshot.val().rate);
+
+      console.log(snapshot.val().role);
+
+      console.log(snapshot.val().start);
+
+      // Change the HTML to reflect
+
+      $("#display-name").html(snapshot.val().name);
+
+      $("#display-role").html(snapshot.val().rate);
+
+      $("#display-start").html(snapshot.val().role);
+
+      $("#display-rate").html(snapshot.val().start);
+
+    // Handle the errors
+
+    }, function(errorObject) {
+
+      console.log("Errors handled: " + errorObject.code);
+
+    });
+>>>>>>> cfb60e0d2ab57257851e8f3ff67a7ed4f49ce6f3
