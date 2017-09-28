@@ -1,8 +1,6 @@
-<<<<<<< HEAD
+
  var config = {
-=======
-var config = {
->>>>>>> cfb60e0d2ab57257851e8f3ff67a7ed4f49ce6f3
+
     apiKey: "AIzaSyA1rLAiVhAnj8DnNQg9G9nAYd_umt3Ns6A",
     authDomain: "bobby-test-22440.firebaseapp.com",
     databaseURL: "https://bobby-test-22440.firebaseio.com",
@@ -35,10 +33,6 @@ $("#sumbitbutton").on("click", function(event){
       start: start
     });
 
-<<<<<<< HEAD
-
-});
-=======
 });
 
 database.ref().on("child_added", function(snapshot) {
@@ -72,4 +66,3 @@ database.ref().on("child_added", function(snapshot) {
       console.log("Errors handled: " + errorObject.code);
 
     });
->>>>>>> cfb60e0d2ab57257851e8f3ff67a7ed4f49ce6f3
